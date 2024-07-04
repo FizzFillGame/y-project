@@ -1,0 +1,79 @@
+
+.app-list-new {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; /* Center the list horizontally */
+    background-color: #1c1c1c; /* Add a background color */
+}
+.app-item-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.app-item-new:last-child {
+    border-bottom: none;
+}
+.app-item-new img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.app-info-new {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 10px;
+    justify-content: flex-start;
+    text-align: left;
+}
+.app-name-new {
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+}
+.app-description-new {
+    font-size: 12px;
+    color: #bbb;
+    flex-grow: 1;
+    text-align: left;
+}
+.status-new {
+    display: flex;
+    align-items: center;
+    min-width: 220px;
+    justify-content: flex-end;
+}
+.status-new span {
+    margin-right: 10px;
+}
+.status-new .dot-new {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.status-new .updated-new {
+    background: green;
+}
+.status-new .update-available-new {
+    background: blue;
+}
+.update-button-new {
+    background: #7f66f8;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 110px; /* Set width of the button */
+}
+.update-button-new:disabled {
+    background: grey;
+    cursor: not-allowed;
+}
